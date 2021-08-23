@@ -55,6 +55,7 @@ class _CountGameState extends State<CountGame> {
                 Row(children: [
                   Expanded(
                     child: count < 20 ? Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         for (var i = 0; i < count; i++) _buildStar(),
                         for (var i = 0; i < 20 - count; i++) _buildStarBorder()
